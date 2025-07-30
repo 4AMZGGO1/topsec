@@ -1,2 +1,0 @@
-# topsec
-study in topsec

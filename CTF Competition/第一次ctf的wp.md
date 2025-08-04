@@ -597,7 +597,7 @@ with open(r'C:\Users\Administrator\Desktop\bisai\output.png', 'wb') as f:
 
 ![image-20250801173507178](images/image-20250801173507178.png)
 
-![image](images/2065132-20210916173847794-1793003304.png)
+![image](https://img2020.cnblogs.com/blog/2065132/202109/2065132-20210916173847794-1793003304.png)
 
 得到答案
 

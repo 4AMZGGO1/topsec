@@ -15,7 +15,7 @@
 
 ### **实验拓扑截图**
 
-![image-20250729112440631](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250729112440631.png)
+![image-20250729112440631](images/image-20250729112440631.png)
 
 ------
 
@@ -35,7 +35,7 @@
 
 #### ARP 请求帧截图：
 
-![image-20250729112814103](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250729112814103.png)
+![image-20250729112814103](images/image-20250729112814103.png)
 
 #### **完整帧信息解读**：
 
@@ -62,7 +62,7 @@ Address Resolution Protocol (request)
 
 #### ARP 应答帧截图：
 
-![image-20250729113006251](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250729113006251.png)
+![image-20250729113006251](images/image-20250729113006251.png)
 
 #### **ARP 响应帧 Frame 29 分析**：
 

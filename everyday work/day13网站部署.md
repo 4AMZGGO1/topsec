@@ -286,7 +286,7 @@ unzip /root/Desktop/farm-ucenter1.5.zip -d /var/www/html/farm
 
 ### 2.2   httpd.conf重新设置 DocumentRoot 为 `/var/www/html/farm/upload`
 
-![image-20250724195218026](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724195218026.png)
+![image-20250724195218026](images/image-20250724195218026.png)
 
 ### 3. 开启 PHP 短标签
 
@@ -298,7 +298,7 @@ vim /etc/php.ini
 short_open_tag = On
 ```
 
-![image-20250724195704988](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724195704988.png)
+![image-20250724195704988](images/image-20250724195704988.png)
 
 ------
 
@@ -331,7 +331,7 @@ setsebool -P httpd_unified 1
 mysql -u root -p123456 farmdb < qqfarm.sql
 ```
 
-![image-20250724201104815](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724201104815.png)
+![image-20250724201104815](images/image-20250724201104815.png)
 
 ------
 
@@ -369,7 +369,7 @@ http://服务器IP
 
 成功访问农场界面：
 
-![image-20250724201338194](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724201338194.png)
+![image-20250724201338194](images/image-20250724201338194.png)
 
 ------
 

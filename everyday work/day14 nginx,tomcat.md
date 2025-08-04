@@ -47,8 +47,8 @@ group = nginx
 ```
 
 📷 本地截图：
- ![image-20250725171255847](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725171255847.png)
- ![image-20250725171401190](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725171401190.png)
+ ![image-20250725171255847](images/image-20250725171255847.png)
+ ![image-20250725171401190](images/image-20250725171401190.png)
 
 ------
 
@@ -91,7 +91,7 @@ server {
 ```
 
 📷 配置截图：
- ![image-20250725171222794](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725171222794.png)
+ ![image-20250725171222794](images/image-20250725171222794.png)
 
 ------
 
@@ -110,7 +110,7 @@ http://服务器IP/index.php
 ```
 
 📷 显示效果：
- ![image-20250725171125262](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725171125262.png)
+ ![image-20250725171125262](images/image-20250725171125262.png)
 
 ------
 
@@ -157,7 +157,7 @@ cd tomcat9
 ```
 
 📷 启动截图：
- ![image-20250725171643960](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725171643960.png)
+ ![image-20250725171643960](images/image-20250725171643960.png)
 
 ------
 
@@ -168,7 +168,7 @@ http://你的服务器IP:8080
 ```
 
 📷 页面效果：
- ![image-20250725171717646](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725171717646.png)
+ ![image-20250725171717646](images/image-20250725171717646.png)
 
 ------
 
@@ -209,7 +209,7 @@ firewall-cmd --reload
 ```
 
 📷 配置截图：
- ![image-20250725171843870](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725171843870.png)
+ ![image-20250725171843870](images/image-20250725171843870.png)
 
 ------
 
@@ -227,7 +227,7 @@ firewall-cmd --reload
 ```
 
 📷 IP 限制配置：
- ![image-20250725171922260](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725171922260.png)
+ ![image-20250725171922260](images/image-20250725171922260.png)
 
 ------
 
@@ -262,7 +262,7 @@ http://192.168.126.138:8080/jshell/jshell.jsp
 ```
 
 📷 成功获取 shell：
- ![image-20250725190128382](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725190128382.png)
+ ![image-20250725190128382](images/image-20250725190128382.png)
 
 ------
 
@@ -292,7 +292,7 @@ cd /usr/local/tomcat/tomcat9
 ```
 
 📷 运行截图：
- ![image-20250725191200982](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725191200982.png)
+ ![image-20250725191200982](images/image-20250725191200982.png)
 
 ------
 
@@ -349,7 +349,7 @@ SOURCE /usr/share/nginx/html/install.sql;
 ```
 
 📷 数据导入截图：
- ![image-20250725193003896](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725193003896.png)
+ ![image-20250725193003896](images/image-20250725193003896.png)
 
 ------
 
@@ -387,7 +387,7 @@ $dbname = 'cms';
 ```
 
 📷 配置截图：
- ![image-20250725193730692](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725193730692.png)
+ ![image-20250725193730692](images/image-20250725193730692.png)
 
 ------
 
@@ -407,5 +407,5 @@ http://你的服务器IP/cms/
 ```
 
 📷 页面效果：
- ![image-20250725193926854](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250725193926854.png)
+ ![image-20250725193926854](images/image-20250725193926854.png)
 

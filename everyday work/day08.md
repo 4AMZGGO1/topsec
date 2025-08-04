@@ -9,7 +9,7 @@ groupadd -g 2000 top2022
 - `-g 2000` 指定组ID
 - `top2022` 是组名
 
-![image-20250718171738529](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718171738529.png)
+![image-20250718171738529](images/image-20250718171738529.png)
 
 ------
 
@@ -33,7 +33,7 @@ useradd -u 1500 -g top2022 allen
 usermod -aG top2023 allen
 ```
 
-![image-20250718171822944](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718171822944.png)
+![image-20250718171822944](images/image-20250718171822944.png)
 
 ------
 
@@ -51,7 +51,7 @@ passwd allen
 passwd -S allen
 ```
 
-![image-20250718171850626](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718171850626.png)
+![image-20250718171850626](images/image-20250718171850626.png)
 
 ------
 
@@ -69,7 +69,7 @@ passwd -l allen
 passwd -u allen
 ```
 
-![image-20250718171910439](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718171910439.png)
+![image-20250718171910439](images/image-20250718171910439.png)
 
 ------
 
@@ -87,7 +87,7 @@ chage -M 90 allen
 chage -E 2025-07-31 allen
 ```
 
-![image-20250718171950016](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718171950016.png)
+![image-20250718171950016](images/image-20250718171950016.png)
 
 ------
 
@@ -100,7 +100,7 @@ useradd -u 200 -M -s /sbin/nologin topuser
 - `-M` 不创建家目录
 - `-s /sbin/nologin` 禁止登录
 
-![image-20250718172120535](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718172120535.png)
+![image-20250718172120535](images/image-20250718172120535.png)
 
 ------
 
@@ -258,7 +258,7 @@ rpm -ivh lftp-4.4.8-8.el7_3.2.x86_64.rpm
 set ftp:charset gbk
 ```
 
-![image-20250718193545458](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718193545458.png)
+![image-20250718193545458](images/image-20250718193545458.png)
 
 ------
 
@@ -294,7 +294,7 @@ vim /etc/passwd
 fakeroot:x:0:0:Fake Root:/root:/bin/bash
 ```
 
-![image-20250718193928750](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718193928750.png)
+![image-20250718193928750](images/image-20250718193928750.png)
 
 字段说明：
 
@@ -341,7 +341,7 @@ grep fakeroot /etc/passwd
 grep fakeroot /etc/shadow
 ```
 
-![image-20250718195646413](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718195646413.png)
+![image-20250718195646413](images/image-20250718195646413.png)
 
 ------
 
@@ -365,7 +365,7 @@ root
 
 因为UID=0。
 
-![image-20250718195703134](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718195703134.png)
+![image-20250718195703134](images/image-20250718195703134.png)
 
 ------
 
@@ -382,5 +382,5 @@ root:x:0:0:root:/root:/bin/bash
 fakeroot:x:0:0:Fake Root:/root:/bin/bash
 ```
 
-![image-20250718195740267](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250718195740267.png)
+![image-20250718195740267](images/image-20250718195740267.png)
 

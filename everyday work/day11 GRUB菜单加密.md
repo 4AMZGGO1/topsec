@@ -25,7 +25,7 @@ password_pbkdf2 bob grub.pbkdf2.sha512.10000.44F55C183CB950EE3908393F4B3D9541DDD
 EOF
 ```
 
-![image-20250722160817707](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722160817707.png)
+![image-20250722160817707](images/image-20250722160817707.png)
 
 #### （3）重新生成grub配置：
 
@@ -33,11 +33,11 @@ EOF
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-![image-20250722160842450](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722160842450.png)
+![image-20250722160842450](images/image-20250722160842450.png)
 
 #### (4)进入grub需要密码
 
-![image-20250722161205014](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722161205014.png)
+![image-20250722161205014](images/image-20250722161205014.png)
 
 ------
 
@@ -78,7 +78,7 @@ exit
 exit
 ```
 
-![image-20250722161655742](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722161655742.png)
+![image-20250722161655742](images/image-20250722161655742.png)
 
 #### （5）重启系统：没有密码
 
@@ -86,7 +86,7 @@ exit
 reboot
 ```
 
-![image-20250722161818812](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722161818812.png)
+![image-20250722161818812](images/image-20250722161818812.png)
 
 ------
 
@@ -122,7 +122,7 @@ do
 done
 ```
 
-![image-20250722170755263](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722170755263.png)
+![image-20250722170755263](images/image-20250722170755263.png)
 
 执行脚本：
 
@@ -131,11 +131,11 @@ chmod +x loop.sh
 ./loop.sh
 ```
 
-![image-20250722170940559](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722170940559.png)
+![image-20250722170940559](images/image-20250722170940559.png)
 
 使用 `ps aux | grep loop.sh` 找出进程 PID：
 
-![image-20250722171112417](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722171112417.png)
+![image-20250722171112417](images/image-20250722171112417.png)
 
 使用 `kill -9` 终止：
 
@@ -143,7 +143,7 @@ chmod +x loop.sh
 kill -9 3064
 ```
 
-![image-20250722171303835](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722171303835.png)
+![image-20250722171303835](images/image-20250722171303835.png)
 
 ------
 
@@ -174,7 +174,7 @@ sudo systemctl enable httpd
 systemctl is-enabled httpd
 ```
 
-![image-20250722172047946](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722172047946.png)
+![image-20250722172047946](images/image-20250722172047946.png)
 
 ------
 
@@ -223,7 +223,7 @@ systemctl restart NetworkManager
 ip addr show ens33
 ```
 
-![image-20250722172744375](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722172744375.png)
+![image-20250722172744375](images/image-20250722172744375.png)
 
 测试DNS解析：
 
@@ -231,5 +231,5 @@ ip addr show ens33
 nslookup www.baidu.com
 ```
 
-![image-20250722172700744](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250722172700744.png)
+![image-20250722172700744](images/image-20250722172700744.png)
 

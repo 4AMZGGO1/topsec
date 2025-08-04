@@ -13,7 +13,7 @@
 用户配置 → 管理模板 → 桌面 → 桌面 → 桌面壁纸
 ```
 
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250714190554229.png" alt="image-20250714190554229" style="zoom:67%;" />
+<img src="images/image-20250714190554229.png" alt="image-20250714190554229" style="zoom:67%;" />
 
 禁止 “运行" 功能，
 
@@ -21,7 +21,7 @@
 用户配置 → 管理模板 → 开始菜单和任务栏 → 删除“运行”菜单
 ```
 
-![image-20250714192317301](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250714192317301.png)
+![image-20250714192317301](images/image-20250714192317301.png)
 
 禁止上网（禁止使用浏览器）
 
@@ -29,7 +29,7 @@
 用户配置 → 管理模板 → 系统 → 不要运行指定的 Windows 应用程序
 ```
 
-![image-20250714192147392](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250714192147392.png)
+![image-20250714192147392](images/image-20250714192147392.png)
 
 删除回收站
 
@@ -37,17 +37,17 @@
 用户配置 → 管理模板 → 桌面 → 从桌面删除“回收站”图标
 ```
 
-![image-20250714192426641](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250714192426641.png)
+![image-20250714192426641](images/image-20250714192426641.png)
 
 
 
 #### tom（class1） 没有回收站，不可以运行，墙纸是123.jpg，可以打开浏览器
 
-![image-20250714193130615](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250714193130615.png)
+![image-20250714193130615](images/image-20250714193130615.png)
 
 #### Jerry（class2）没有回收站，有 运行窗口，墙纸是hh.jpg,无法打开浏览器上网
 
-![image-20250714193409980](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250714193409980.png)
+![image-20250714193409980](images/image-20250714193409980.png)
 
 
 
@@ -64,11 +64,11 @@
 
 tom，class1，壁纸是123.jpg，不可以运行，可以上网，没有回收站
 
-![image-20250714194532678](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250714194532678.png)
+![image-20250714194532678](images/image-20250714194532678.png)
 
 Jerry,class2，壁纸是hh.jpg,可以运行，可以上网，没有回收站
 
-![image-20250714195134238](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250714195134238.png)
+![image-20250714195134238](images/image-20250714195134238.png)
 
 #### 如果nanda开启强制，tom（class1）也开启强制
 
@@ -81,7 +81,7 @@ Jerry,class2，壁纸是hh.jpg,可以运行，可以上网，没有回收站
 
 tom:  123.jpg   无法运行    可以上网  没有回收站
 
-![image-20250714195552147](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250714195552147.png)
+![image-20250714195552147](images/image-20250714195552147.png)
 
 # 总结
 

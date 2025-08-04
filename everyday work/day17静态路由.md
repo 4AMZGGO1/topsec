@@ -164,11 +164,11 @@
 
 📷 如下图所示：
 
-> ![image-20250730194541470](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250730194541470.png)
+> ![image-20250730194541470](images/image-20250730194541470.png)
 >
 > 📍 路由路径完全正确：**PC3 → R6 → R1 → R7 → PC1**
 >
-> ![image-20250730194706918](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250730194706918.png)
+> ![image-20250730194706918](images/image-20250730194706918.png)
 >
 > ✅ PC3 → R3 的路径为：
 >  **PC3 → R6 → R1 → R7 → R2 → R3**

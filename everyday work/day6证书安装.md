@@ -19,7 +19,7 @@
 
 - 创建新网站，设置根目录、主机名绑定，**启用 32 位应用程序**。
 
-![image-20250715201102252](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715201102252.png)
+![image-20250715201102252](images/image-20250715201102252.png)
 
 ------
 
@@ -47,7 +47,7 @@
 
 - 验证是否正常返回页面。
 
-![image-20250715202400138](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715202400138.png)
+![image-20250715202400138](images/image-20250715202400138.png)
 
 ------
 
@@ -58,11 +58,11 @@
     - 证书颁发机构
     - 证书颁发机构 Web 注册
 
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715202802387.png" alt="image-20250715202802387" style="zoom:67%;" />
+<img src="images/image-20250715202802387.png" alt="image-20250715202802387" style="zoom:67%;" />
 
 - 完成安装后，配置 CA 类型（企业根 CA）。
 
-![image-20250715203040105](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715203040105.png)
+![image-20250715203040105](images/image-20250715203040105.png)
 
 ------
 
@@ -76,7 +76,7 @@
 
 - 验证 `http://192.168.1.100/certsrv` 可正常访问。
 
-- <img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715205305326.png" alt="image-20250715205305326" style="zoom:50%;" />
+- <img src="images/image-20250715205305326.png" alt="image-20250715205305326" style="zoom:50%;" />
 
 ------
 
@@ -90,9 +90,9 @@
 
 - 创建新证书申请，选择 **Web 服务器证书**，填写公共名 `www.topsec.com`。
 
-![image-20250715205655972](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715205655972.png)
+![image-20250715205655972](images/image-20250715205655972.png)
 
-![image-20250715205940046](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715205940046.png)
+![image-20250715205940046](images/image-20250715205940046.png)
 
 - 提交后，等待 CA 管理员审核。
 
@@ -108,7 +108,7 @@
 
 - 在 **挂起的请求** 中找到申请，右键 ➜ 批准颁发。
 
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715210157234.png" alt="image-20250715210157234" style="zoom:80%;" />
+<img src="images/image-20250715210157234.png" alt="image-20250715210157234" style="zoom:80%;" />
 
 - 客户端重新访问 `certsrv`，下载颁发好的服务器证书（`*.cer`）。
 
@@ -120,7 +120,7 @@
 - 绑定到网站：
   - 选择网站 ➜ 绑定 ➜ 添加 **https** ➜ 选择刚导入的证书。
 
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715210448891.png" alt="image-20250715210448891" style="zoom: 50%;" /><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715211013402.png" alt="image-20250715211013402" style="zoom:67%;" />
+<img src="images/image-20250715210448891.png" alt="image-20250715210448891" style="zoom: 50%;" /><img src="images/image-20250715211013402.png" alt="image-20250715211013402" style="zoom:67%;" />
 
 ------
 
@@ -132,7 +132,7 @@
 
 ### 🔑 【可选】通过 `http://192.168.1.100/certsrv` ➜ 下载 CA 证书
 
-![c3a5629fbc3df2162a7e1b96abe0e96a_720](C:\Users\Administrator\Documents\Tencent Files\1282341070\nt_qq\nt_data\Pic\2025-07\Thumb\c3a5629fbc3df2162a7e1b96abe0e96a_720.png)
+![c3a5629fbc3df2162a7e1b96abe0e96a_720](images/c3a5629fbc3df2162a7e1b96abe0e96a_720.png)
 
 ------
 
@@ -148,7 +148,7 @@
 
 - 右键 `证书` ➜ 所有任务 ➜ 导入 ➜ 选择 `CA根证书.cer` ➜ 导入到 **受信任的根证书颁发机构**。
 
-![image-20250715235248834](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715235248834.png)
+![image-20250715235248834](images/image-20250715235248834.png)
 
 ------
 
@@ -162,7 +162,7 @@
 
 - 浏览器显示安全锁，证明证书已被信任。
 
-![image-20250716000935361](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250716000935361.png)
+![image-20250716000935361](images/image-20250716000935361.png)
 
 ------
 

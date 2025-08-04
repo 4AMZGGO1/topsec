@@ -61,7 +61,7 @@ sudo vim /etc/crontab
 | `centos7`  | ens34 | 172.16.1.254  | 无需配置      |
 | 日志服务器 | ens33 | 172.16.1.50   | 172.16.1.254  |
 
-📷 ![image-20250723192259836](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723192259836.png)
+📷 ![image-20250723192259836](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723192259836.png)
 
 ------
 
@@ -94,7 +94,7 @@ cat /proc/sys/net/ipv4/ip_forward
 # 应该输出 1
 ```
 
-📷 ![image-20250723192618789](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723192618789.png)
+📷 ![image-20250723192618789](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723192618789.png)
 
 ------
 
@@ -127,7 +127,7 @@ sudo ip route add default via 172.16.1.254
 ping 172.16.1.50
 ```
 
-📷 ![image-20250723192938893](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723192938893.png)
+📷 ![image-20250723192938893](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723192938893.png)
 
 ------
 
@@ -151,7 +151,7 @@ ping 172.16.1.50
 systemctl restart rsyslog
 ```
 
-📷 ![image-20250723202555319](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250723202555319.png)
+📷 ![image-20250723202555319](images/image-20250723202555319.png)
 
 ------
 
@@ -169,7 +169,7 @@ $ModLoad imtcp
 $InputTCPServerRun 514
 ```
 
-📷 ![image-20250723194616177](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723194616177.png)
+📷 ![image-20250723194616177](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723194616177.png)
 
 ------
 
@@ -224,7 +224,7 @@ ssh wronguser@192.168.1.254
 tail -f /var/log/class1/class2.txt
 ```
 
-📷 ![image-20250723195217082](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723195217082.png)
+📷 ![image-20250723195217082](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723195217082.png)
 
 ------
 
@@ -240,7 +240,7 @@ ssh root@192.168.1.254
 tail -f /var/log/class1/class3.txt
 ```
 
-📷 ![image-20250723195313208](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723195313208.png)
+📷 ![image-20250723195313208](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250723195313208.png)
 
 ------
 

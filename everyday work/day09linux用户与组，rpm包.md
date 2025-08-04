@@ -9,7 +9,7 @@ groupadd -g 2000 top2022
 - `-g 2000`：指定 GID
 - `top2022`：组名称
 
-![image-20250718171738529](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718171738529.png)
+![image-20250718171738529](images/image-20250718171738529.png)
 
 ------
 
@@ -25,7 +25,7 @@ usermod -aG top2023 allen
 - `-g` 设置基本组
 - `-aG` 添加附加组
 
-![image-20250718171822944](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718171822944.png)
+![image-20250718171822944](images/image-20250718171822944.png)
 
 ------
 
@@ -39,7 +39,7 @@ passwd -S allen
 - `passwd`：交互设置用户密码
 - `-S`：查看密码状态（是否锁定/生效等）
 
-![image-20250718171850626](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718171850626.png)
+![image-20250718171850626](images/image-20250718171850626.png)
 
 ------
 
@@ -50,7 +50,7 @@ passwd -l allen    # 锁定
 passwd -u allen    # 解锁
 ```
 
-![image-20250718171910439](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718171910439.png)
+![image-20250718171910439](images/image-20250718171910439.png)
 
 ------
 
@@ -64,7 +64,7 @@ chage -E 2025-07-31 allen
 - `-M` 设置最大密码使用天数
 - `-E` 设置账户过期日期
 
-![image-20250718171950016](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718171950016.png)
+![image-20250718171950016](images/image-20250718171950016.png)
 
 ------
 
@@ -77,7 +77,7 @@ useradd -u 200 -M -s /sbin/nologin topuser
 - `-M`：不创建 home 目录
 - `-s /sbin/nologin`：禁用登录
 
-![image-20250718172120535](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718172120535.png)
+![image-20250718172120535](images/image-20250718172120535.png)
 
 ------
 
@@ -155,7 +155,7 @@ gpgcheck=0
 
 > 若开启 GPG 校验，请添加 `gpgkey=...` 项。
 
-![image-20250720162108580](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250720162108580.png)
+![image-20250720162108580](images/image-20250720162108580.png)
 
 ------
 
@@ -166,7 +166,7 @@ sudo yum clean all
 sudo yum makecache
 ```
 
-![image-20250720162600236](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250720162600236.png)
+![image-20250720162600236](images/image-20250720162600236.png)
 
 ------
 
@@ -202,7 +202,7 @@ sudo rpm -ivh /mnt/cdrom/Packages/lftp-4.4.8-8.el7_3.2.x86_64.rpm
 sudo yum --disablerepo="*" --enablerepo="local-media" install lftp -y
 ```
 
-![image-20250720162713191](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250720162713191.png)
+![image-20250720162713191](images/image-20250720162713191.png)
 
 ------
 
@@ -212,7 +212,7 @@ sudo yum --disablerepo="*" --enablerepo="local-media" install lftp -y
 set ftp:charset gbk
 ```
 
-![image-20250718193545458](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718193545458.png)
+![image-20250718193545458](images/image-20250718193545458.png)
 
 ------
 
@@ -233,7 +233,7 @@ vim /etc/passwd
 fakeroot:x:0:0:Fake Root:/root:/bin/bash
 ```
 
-![image-20250718193928750](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718193928750.png)
+![image-20250718193928750](images/image-20250718193928750.png)
 
 ------
 
@@ -257,7 +257,7 @@ grep fakeroot /etc/passwd
 grep fakeroot /etc/shadow
 ```
 
-![image-20250718195646413](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718195646413.png)
+![image-20250718195646413](images/image-20250718195646413.png)
 
 ------
 
@@ -274,7 +274,7 @@ whoami
 root
 ```
 
-![image-20250718195703134](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718195703134.png)
+![image-20250718195703134](images/image-20250718195703134.png)
 
 ------
 
@@ -291,4 +291,4 @@ root:x:0:0:root:/root:/bin/bash
 fakeroot:x:0:0:Fake Root:/root:/bin/bash
 ```
 
-![image-20250718195740267](file:///C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20250718195740267.png)
+![image-20250718195740267](images/image-20250718195740267.png)

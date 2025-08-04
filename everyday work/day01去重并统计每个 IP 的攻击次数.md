@@ -6,7 +6,7 @@
 grep "Failed password" ./secure | awk '{print $11}' | sort | uniq -c | sort -nr
 ```
 
-![image-20250717165054613](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717165054613.png)
+![image-20250717165054613](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717165054613.png)
 
 ------
 
@@ -18,7 +18,7 @@ cd /tmp/nd2025
 dd if=/dev/zero of=./bigfile bs=1M count=100
 ```
 
-![image-20250717165406373](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717165406373.png)
+![image-20250717165406373](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717165406373.png)
 
 ------
 
@@ -29,7 +29,7 @@ cd /tmp
 tar -zcf /opt/1.tar.gz nd2025
 ```
 
-![image-20250717165707005](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717165707005.png)
+![image-20250717165707005](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717165707005.png)
 
 ------
 
@@ -40,7 +40,7 @@ cd /opt
 tar -zxf 1.tar.gz -C /root/Desktop/
 ```
 
-![image-20250717165928901](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717165928901.png)
+![image-20250717165928901](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717165928901.png)
 
 ------
 
@@ -54,7 +54,7 @@ tar -zxvf httpd-2.2.15.tar.gz
 cd httpd-2.2.15
 ```
 
-![image-20250717170459534](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717170459534.png)
+![image-20250717170459534](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717170459534.png)
 
 ------
 
@@ -73,7 +73,7 @@ make
 make install
 ```
 
-![image-20250717170623745](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717170623745.png)
+![image-20250717170623745](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717170623745.png)
 
 ------
 
@@ -84,7 +84,7 @@ echo 'export PATH=$PATH:/usr/local/apache2/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-![image-20250717170735320](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717170735320.png)
+![image-20250717170735320](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717170735320.png)
 
 ------
 
@@ -95,7 +95,7 @@ apachectl start
 ps aux | grep httpd
 ```
 
-![image-20250717170846842](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717170846842.png)
+![image-20250717170846842](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717170846842.png)
 
 ------
 
@@ -103,7 +103,7 @@ ps aux | grep httpd
 
 http://192.168.126.129/
 
-![image-20250717171051468](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717171051468.png)
+![image-20250717171051468](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717171051468.png)
 
 ------
 
@@ -125,13 +125,13 @@ vim /var/www/html/index.html
 <h1>ZGG01</h1>
 ```
 
-![image-20250717171452583](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717171452583.png)
+![image-20250717171452583](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717171452583.png)
 
 ------
 
 ### 访问验证主页修改成功
 
-![image-20250717171726437](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717171726437.png)
+![image-20250717171726437](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717171726437.png)
 
 ------
 
@@ -144,7 +144,7 @@ sudo dpkg -i QQ_3.2.12_240902_amd64_01.deb
 sudo apt install -f
 ```
 
-![image-20250717172158733](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717172158733.png)
+![image-20250717172158733](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717172158733.png)
 
 ------
 
@@ -154,5 +154,5 @@ sudo apt install -f
 qq
 ```
 
-![image-20250717172245410](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717172245410.png)
+![image-20250717172245410](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250717172245410.png)
 

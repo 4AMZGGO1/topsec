@@ -10,7 +10,7 @@ man mkdir
 
 在 `man mkdir` 中，你会发现 `-p` 选项，表示如果父目录不存在则一并创建。
 
-![image-20250716162842763](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250716162842763.png)
+![image-20250716162842763](images/image-20250716162842763.png)
 
 #### 1.2 使用 `-p` 选项一次性创建两级目录
 
@@ -20,7 +20,7 @@ mkdir -p /tmp/topclass1/topgroup
 
 这样，`mkdir` 会创建 `/tmp/topclass1` 和 `/tmp/topclassq1/topgroup` 目录（如果它们不存在的话）。
 
-![image-20250716162946675](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250716162946675.png)
+![image-20250716162946675](images/image-20250716162946675.png)
 
 #### 1.3 在 `/tmp/topclass1/topgroup` 目录中创建文件 `topuser.txt`
 
@@ -42,7 +42,7 @@ date >> topuser.txt
 cat /tmp/topclass1/topgroup/topuser.txt
 ```
 
-![image-20250716163230266](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250716163230266.png)
+![image-20250716163230266](images/image-20250716163230266.png)
 
 
 

@@ -63,7 +63,7 @@
 </Directory>
 ```
 
-![image-20250724115205268](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250724115205268.png)
+![image-20250724115205268](images/image-20250724115205268.png)
 
 #### 方法二：使用传统方式（兼容老版本 Apache）
 
@@ -81,7 +81,7 @@
 systemctl restart httpd
 ```
 
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250724172311488.png" alt="image-20250724172311488" style="zoom:67%;" />
+<img src="images/image-20250724172311488.png" alt="image-20250724172311488" style="zoom:67%;" />
 
 ------
 
@@ -109,7 +109,7 @@ systemctl restart httpd
    </VirtualHost>
    ```
 
-   ![image-20250724190308050](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250724190308050.png)
+   ![image-20250724190308050](images/image-20250724190308050.png)
 
 3. 创建目录和测试页面：
 
@@ -141,7 +141,7 @@ systemctl restart httpd
    http://www.site2.com
    ```
 
-   ![image-20250724190821527](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250724190821527.png)
+   ![image-20250724190821527](images/image-20250724190821527.png)
 
 ------
 
@@ -189,7 +189,7 @@ SELECT name, tel FROM users WHERE sex = 'g';
 SELECT name, tel FROM users WHERE sex = 'g' AND age < 20;
 ```
 
-![image-20250724192102484](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250724192102484.png)
+![image-20250724192102484](images/image-20250724192102484.png)
 
 #### 更新数据
 
@@ -203,7 +203,7 @@ UPDATE users SET tel='13838383838' WHERE id=1;
 DELETE FROM users WHERE id=3;
 ```
 
-![image-20250724192247218](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250724192247218.png)
+![image-20250724192247218](images/image-20250724192247218.png)
 
 ### 删除表和库
 
@@ -216,7 +216,7 @@ DROP TABLE users;
 DROP DATABASE class1;
 ```
 
-![image-20250724192405918](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250724192405918.png)
+![image-20250724192405918](images/image-20250724192405918.png)
 
 ------
 
@@ -228,7 +228,7 @@ DROP DATABASE class1;
 mysqldump -u root -p123456 class1 users > /tmp/class1.users.sql
 ```
 
-![image-20250724192708241](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250724192708241.png)
+![image-20250724192708241](images/image-20250724192708241.png)
 
 #### 恢复
 
@@ -243,7 +243,7 @@ mysql -u root -p123456 class1 < /tmp/class1.users.sql
 source /tmp/class1.users.sql;
 ```
 
-![image-20250724193415649](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250724193415649.png)
+![image-20250724193415649](images/image-20250724193415649.png)
 
 ------
 
@@ -286,7 +286,7 @@ unzip /root/Desktop/farm-ucenter1.5.zip -d /var/www/html/farm
 
 ### 2.2   httpd.conf重新设置 DocumentRoot 为 `/var/www/html/farm/upload`
 
-![image-20250724195218026](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724195218026.png)
+![image-20250724195218026](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724195218026.png)
 
 ### 3. 开启 PHP 短标签
 
@@ -298,7 +298,7 @@ vim /etc/php.ini
 short_open_tag = On
 ```
 
-![image-20250724195704988](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724195704988.png)
+![image-20250724195704988](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724195704988.png)
 
 ------
 
@@ -331,7 +331,7 @@ setsebool -P httpd_unified 1
 mysql -u root -p123456 farmdb < qqfarm.sql
 ```
 
-![image-20250724201104815](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724201104815.png)
+![image-20250724201104815](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724201104815.png)
 
 ------
 
@@ -369,7 +369,7 @@ http://服务器IP
 
 成功访问农场界面：
 
-![image-20250724201338194](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724201338194.png)
+![image-20250724201338194](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250724201338194.png)
 
 ------
 

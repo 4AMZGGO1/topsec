@@ -42,7 +42,7 @@ openssl enc -d -aes-256-cbc -in test1.txt.enc -out test1_decrypted.txt
 cat test1_decrypted.txt
 ```
 
-![image-20250715111548473](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715111548473.png)
+![image-20250715111548473](images/image-20250715111548473.png)
 
 
 
@@ -107,7 +107,7 @@ openssl pkeyutl -encrypt -inkey pub.key -pubin -in test1.txt -out test2.enc
 openssl pkeyutl -decrypt -inkey rsa.key -in test2.enc -out test3.txt
 ```
 
-![3fd6d3994a33e823a1eee064809fdc46](C:\Users\Administrator\Documents\Tencent Files\1282341070\nt_qq\nt_data\Pic\2025-07\Ori\3fd6d3994a33e823a1eee064809fdc46.png)
+![3fd6d3994a33e823a1eee064809fdc46](images/3fd6d3994a33e823a1eee064809fdc46.png)
 
 
 
@@ -119,11 +119,11 @@ openssl pkeyutl -decrypt -inkey rsa.key -in test2.enc -out test3.txt
 openssl dgst -sha256 test1.txt
 ```
 
-![image-20250715115002694](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715115002694.png)
+![image-20250715115002694](images/image-20250715115002694.png)
 
 #### 还原test1，再次加密，得到与第一次相同的值
 
-![image-20250715115307840](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715115307840.png)
+![image-20250715115307840](images/image-20250715115307840.png)
 
 #### 所以相同明文，不管加密多少次，最终结果相同
 
@@ -153,7 +153,7 @@ openssl rsa -in xuwei_private.pem -pubout -out xuwei_public.pem
 `
 ```
 
-![image-20250715165218754](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715165218754.png)
+![image-20250715165218754](images/image-20250715165218754.png)
 
 ## 🔗 2️⃣ 互换公钥
 
@@ -169,7 +169,7 @@ cp /home/kali/Desktop/xuwei/xuwei_public.pem /home/kali/Desktop/guotao/
 cp /home/kali/Desktop/guotao/guotao_public.pem /home/kali/Desktop/xuwei/
 ```
 
-![image-20250715165516398](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715165516398.png)
+![image-20250715165516398](images/image-20250715165516398.png)
 
 ## ✏️ 3️⃣ 徐伟准备明文
 
@@ -186,7 +186,7 @@ echo "你好" > message.txt
 openssl rsautl -encrypt -inkey guotao_public.pem -pubin -in message.txt -out message.enc
 ```
 
-![image-20250715165845234](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715165845234.png)
+![image-20250715165845234](images/image-20250715165845234.png)
 
 ## 🧩 5️⃣ 徐伟生成哈希（SHA256）
 

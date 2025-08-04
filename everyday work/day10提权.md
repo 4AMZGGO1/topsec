@@ -19,7 +19,7 @@ chmod 1777 /tmp/test1/test2
 ls -ld /tmp/test1 /tmp/test1/test2
 ```
 
-![image-20250721163728590](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250721163728590.png)
+![image-20250721163728590](images/image-20250721163728590.png)
 
 | 权限数值 | 说明                               | 安全性 | 用途                   |
 | -------- | ---------------------------------- | ------ | ---------------------- |
@@ -52,7 +52,7 @@ chown allen:nz2002 /tmp/test1/test2
 ls -ld /tmp/test1 /tmp/test1/test2
 ```
 
-![image-20250721164014214](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250721164014214.png)
+![image-20250721164014214](images/image-20250721164014214.png)
 
 ------
 
@@ -72,11 +72,11 @@ cat /etc/shadow
 
 如果没有 SUID：**Permission denied**
 
-![image-20250721164216958](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250721164216958.png) 
+![image-20250721164216958](images/image-20250721164216958.png) 
 
 加上 SUID 后：**普通用户可读 /etc/shadow**
 
-![image-20250721164330741](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250721164330741.png)
+![image-20250721164330741](images/image-20250721164330741.png)
 
 ------
 
@@ -92,7 +92,7 @@ sudo install -m 4755 $(which awk) /tmp/suidawk
 /tmp/suidawk '//' /etc/shadow
 ```
 
-![image-20250721164948572](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250721164948572.png)
+![image-20250721164948572](images/image-20250721164948572.png)
 
 
 
@@ -116,7 +116,7 @@ allen ALL=(ALL) NOPASSWD: /usr/bin/find
 
 说明：允许 `allen` 无需密码以 root 身份执行 `/usr/bin/find` 命令
 
-![image-20250721170423650](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250721170423650.png)
+![image-20250721170423650](images/image-20250721170423650.png)
 
 ------
 
@@ -148,5 +148,5 @@ uid=0(root) gid=0(root) groups=0(root)
 
 说明：`allen` 已获取 root 权限！
 
-![image-20250721170516442](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250721170516442.png)
+![image-20250721170516442](images/image-20250721170516442.png)
 

@@ -18,7 +18,7 @@ openssl rsa -in xuwei_private.pem -pubout -out xuwei_public.pem
 `
 ```
 
-![image-20250715165218754](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715165218754.png)
+![image-20250715165218754](images/image-20250715165218754.png)
 
 ## 🔗 2️⃣ 互换公钥
 
@@ -34,7 +34,7 @@ cp /home/kali/Desktop/xuwei/xuwei_public.pem /home/kali/Desktop/guotao/
 cp /home/kali/Desktop/guotao/guotao_public.pem /home/kali/Desktop/xuwei/
 ```
 
-![image-20250715165516398](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715165516398.png)
+![image-20250715165516398](images/image-20250715165516398.png)
 
 ## ✏️ 3️⃣ 徐伟准备明文
 
@@ -51,7 +51,7 @@ echo "你好" > message.txt
 openssl rsautl -encrypt -inkey guotao_public.pem -pubin -in message.txt -out message.enc
 ```
 
-![image-20250715165845234](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715165845234.png)
+![image-20250715165845234](images/image-20250715165845234.png)
 
 ## 🧩 5️⃣ 徐伟生成密文的哈希（SHA256）
 
@@ -65,7 +65,7 @@ openssl dgst -sha256 -out message.enc.sha256 message.enc
 cat message.enc.sha256
 ```
 
-![image-20250715190420121](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715190420121.png)
+![image-20250715190420121](images/image-20250715190420121.png)
 
 ## ✍️ 6️⃣ 徐伟用私钥对密文哈希签名（生成数字签名）
 
@@ -84,7 +84,7 @@ openssl dgst -sha256 -sign xuwei_private.pem -out signature_on_enc.bin message.e
 - `signature_on_enc.bin` — 对密文做的数字签名
 - `xuwei_public.pem` — 徐伟的公钥（如果国涛还没保存）
 
-![image-20250715191113000](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715191113000.png)
+![image-20250715191113000](images/image-20250715191113000.png)
 
 ## ✅ 8️⃣ 国涛收到后，先验签（对密文）
 
@@ -102,7 +102,7 @@ Verified OK
 
 说明密文没被动过，并且确实是徐伟签过的。
 
-![image-20250715191330508](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715191330508.png)
+![image-20250715191330508](images/image-20250715191330508.png)
 
 ------
 
@@ -118,4 +118,4 @@ openssl rsautl -decrypt -inkey guotao_private.pem -in message.enc -out decrypted
 cat decrypted_message.txt
 ```
 
-![image-20250715191406055](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250715191406055.png)
+![image-20250715191406055](images/image-20250715191406055.png)

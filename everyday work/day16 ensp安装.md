@@ -15,7 +15,7 @@
 
 ### **实验拓扑截图**
 
-![image-20250729112440631](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250729112440631.png)
+![image-20250729112440631](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250729112440631.png)
 
 ------
 
@@ -35,7 +35,7 @@
 
 #### ARP 请求帧截图：
 
-![image-20250729112814103](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250729112814103.png)
+![image-20250729112814103](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250729112814103.png)
 
 #### **完整帧信息解读**：
 
@@ -62,7 +62,7 @@ Address Resolution Protocol (request)
 
 #### ARP 应答帧截图：
 
-![image-20250729113006251](file:///C:/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250729113006251.png)
+![image-20250729113006251](images/%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250729113006251.png)
 
 #### **ARP 响应帧 Frame 29 分析**：
 
@@ -136,7 +136,7 @@ PC1 ----- SW ----- PC2
 
 4. 观察是否通信成功。
 
-### ![image-20250729113406121](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250729113406121.png)
+### ![image-20250729113406121](images/image-20250729113406121.png)
 
 
 
@@ -176,7 +176,7 @@ Enter system view, return user view with Ctrl+Z.
 [Huawei]
 ```
 
-> ![image-20250729114309609](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250729114309609.png)
+> ![image-20250729114309609](images/image-20250729114309609.png)
 
 ------
 
@@ -191,7 +191,7 @@ Enter system view, return user view with Ctrl+Z.
 >
 > 改为 `SW1`，方便识别设备角色。
 >
-> ![image-20250729114325665](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250729114325665.png)
+> ![image-20250729114325665](images/image-20250729114325665.png)
 
 ------
 
@@ -202,7 +202,7 @@ Enter system view, return user view with Ctrl+Z.
 <SW1>
 ```
 
-![image-20250729114402842](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250729114402842.png)
+![image-20250729114402842](images/image-20250729114402842.png)
 
 #### 4. **从系统视图返回终端直接命令行**
 
@@ -219,7 +219,7 @@ Enter system view, return user view with Ctrl+Z.
 
 ------
 
-### ![image-20250729144026135](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250729144026135.png)
+### ![image-20250729144026135](images/image-20250729144026135.png)
 
 ```bash
 <Huawei> system-view
@@ -244,7 +244,7 @@ Enter system view, return user view with Ctrl+Z.
 
 ```
 
-![image-20250729115408944](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250729115408944.png)
+![image-20250729115408944](images/image-20250729115408944.png)
 
 ------
 
@@ -268,4 +268,4 @@ Enter system view, return user view with Ctrl+Z.
    <AR1> telnet 192.168.100.254
    ```
 
-![image-20250729143951910](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250729143951910.png)
+![image-20250729143951910](images/image-20250729143951910.png)

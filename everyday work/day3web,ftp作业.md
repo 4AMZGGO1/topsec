@@ -2,49 +2,49 @@
 
 #### web服务器安装
 
-![image-20250711145712050](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711145712050.png)
+![image-20250711145712050](images/image-20250711145712050.png)
 
 #### 80端口默认主页
 
 
 
-![image-20250711150535993](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711150535993.png)
+![image-20250711150535993](images/image-20250711150535993.png)
 
 #### 写一个HTML文件并设置成主页，端口为81
 
-![image-20250711151348378](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711151348378.png)
+![image-20250711151348378](images/image-20250711151348378.png)
 
 #### 成功通过不同端口访问
 
 
 
-![image-20250711151400858](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711151400858.png)
+![image-20250711151400858](images/image-20250711151400858.png)
 
 动态网站需要把启动32位应用程序设置成true
 
-![image-20250711152531596](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711152531596.png)
+![image-20250711152531596](images/image-20250711152531596.png)
 
 
 
 #### 成功通过端口3213访问动态网站
 
-![image-20250711155843059](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711155843059.png)
+![image-20250711155843059](images/image-20250711155843059.png)
 
 # 练习二
 
 #### 把两个网站都设置在80端口，并用基于域名的虚拟主机技术设置为不同的域名
 
-![image-20250711164159485](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711164159485.png)
+![image-20250711164159485](images/image-20250711164159485.png)
 
-![image-20250711164241992](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711164241992.png)
+![image-20250711164241992](images/image-20250711164241992.png)
 
 #### 修改本地的hosts文件进行绑定
 
-![image-20250711164322937](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711164322937.png)
+![image-20250711164322937](images/image-20250711164322937.png)
 
 #### 成功通过域名访问网站
 
-![image-20250711164426544](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711164426544.png)
+![image-20250711164426544](images/image-20250711164426544.png)
 
 
 
@@ -52,11 +52,11 @@
 
 #### 搭建ftp站点
 
-![image-20250711160647043](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711160647043.png)
+![image-20250711160647043](images/image-20250711160647043.png)
 
 #### 以kali连接并成功下载work1文件
 
-![image-20250711170422067](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711170422067.png)
+![image-20250711170422067](images/image-20250711170422067.png)
 
 
 
@@ -64,15 +64,15 @@
 
 #### window2019搭建DHCP服务器和DNS服务器，DHCP服务器的dns指向2019自己
 
-![image-20250711172436782](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711172436782.png)
+![image-20250711172436782](images/image-20250711172436782.png)
 
 #### dns服务器添加动态网页域名记录
 
-![image-20250711173034132](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711173034132.png)
+![image-20250711173034132](images/image-20250711173034132.png)
 
 #### window7可以通过域名访问动态网站
 
-![image-20250711172956930](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711172956930.png)
+![image-20250711172956930](images/image-20250711172956930.png)
 
 
 
@@ -82,7 +82,7 @@
 
 #### 设置ftp文件夹的权限，caiwu可读可写，public可以查看文件夹并上传，不可写
 
-![image-20250711173718818](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711173718818.png)
+![image-20250711173718818](images/image-20250711173718818.png)
 
 #### 因为FTP 协议没有 Host header
 
@@ -116,7 +116,7 @@ sudo apt install lftp
 lftp -u caiwu,123.com ftp.baidu.com
 ```
 
-![image-20250711205707659](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250711205707659.png)
+![image-20250711205707659](images/image-20250711205707659.png)
 
 
 
@@ -128,11 +128,11 @@ lftp -u caiwu,123.com ftp.baidu.com
 set ftp:passive-mode no   # 主动模式
 ```
 
-![image-20250712123746353](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250712123746353.png)
+![image-20250712123746353](images/image-20250712123746353.png)
 
 #### 使用wireshark抓取数据包
 
-![image-20250712123901303](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250712123901303.png)
+![image-20250712123901303](images/image-20250712123901303.png)
 
 ```
 42行显示 Request: PORT 192,168,100,12,175,245      
@@ -141,7 +141,7 @@ set ftp:passive-mode no   # 主动模式
 
 #### 这就是主动模式的特征：服务端连接客户端指定端口。
 
-![image-20250712125056293](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250712125056293.png)
+![image-20250712125056293](images/image-20250712125056293.png)
 
 #### 切换成被动模式（PASV)
 
@@ -149,11 +149,11 @@ set ftp:passive-mode no   # 主动模式
 set ftp:passive-mode yes  # 被动模式
 ```
 
-![image-20250712125253170](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250712125253170.png)
+![image-20250712125253170](images/image-20250712125253170.png)
 
 #### 抓取数据包
 
-![image-20250712125543606](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250712125543606.png)
+![image-20250712125543606](images/image-20250712125543606.png)
 
 ```
 46. Request: PASV	证明是被动模式

@@ -150,7 +150,7 @@ find / -perm -4000 -type f 2>/dev/null | head -10 > /tmp/suid_binaries 2>&1
 
 ### 输出：
 
-![16fe650202b4cd54c34d2d75e285a096](16fe650202b4cd54c34d2d75e285a096.png)
+![16fe650202b4cd54c34d2d75e285a096](images/16fe650202b4cd54c34d2d75e285a096.png)
 
 > 🔍 发现 `/readflag` 可疑可执行文件
 
@@ -168,7 +168,7 @@ http://121.4.91.93:12346/bootstrap/test/bypass_disablefunc.php?cmd=/readflag&out
 flag{8382843b-d3e8-72fc-6625-ba5269953b212321343}
 ```
 
-![505acda6c92d8efd9664fd2c9bb022d4](505acda6c92d8efd9664fd2c9bb022d4.png)
+![505acda6c92d8efd9664fd2c9bb022d4](images/505acda6c92d8efd9664fd2c9bb022d4.png)
 
 ------
 
@@ -194,19 +194,19 @@ flag{8382843b-d3e8-72fc-6625-ba5269953b212321343}
 
 #### 过滤dns，http（post）
 
-![cd68229dd547e7a00da89e897519dcff](cd68229dd547e7a00da89e897519dcff.png)
+![cd68229dd547e7a00da89e897519dcff](images/cd68229dd547e7a00da89e897519dcff.png)
 
 #### 发现两条可疑记录，但是并没有hosts相关信息
 
 #### 追踪tcp流    cilentcheck   发现了冰蝎的key，所以攻击程序是冰蝎
 
-<img src="8d71d25f4af3c96e2c91920b22598cb5.png" alt="8d71d25f4af3c96e2c91920b22598cb5" style="zoom: 80%;" />
+<img src="images/8d71d25f4af3c96e2c91920b22598cb5.png" alt="8d71d25f4af3c96e2c91920b22598cb5" style="zoom: 80%;" />
 
 shell.php的tcp流是乱码，很像base64加密过的
 
 
 
-![6ab6b65b06d2c580b9e67d6151a49cf7_720](6ab6b65b06d2c580b9e67d6151a49cf7_720.png)
+![6ab6b65b06d2c580b9e67d6151a49cf7_720](images/6ab6b65b06d2c580b9e67d6151a49cf7_720.png)
 
 先base64解码然后aes用密钥解，得到真实的域名
 
@@ -214,7 +214,7 @@ shell.php的tcp流是乱码，很像base64加密过的
 https://github.com/melody27/behinder_decrypt    现成的解密脚本
 ```
 
-![image-20250803182524801](image-20250803182524801.png)
+![image-20250803182524801](images/image-20250803182524801.png)
 
 
 
@@ -224,13 +224,13 @@ https://github.com/melody27/behinder_decrypt    现成的解密脚本
 
 #### 打开jadx.gui分析
 
-![image-20250803183957715](image-20250803183957715.png)
+![image-20250803183957715](images/image-20250803183957715.png)
 
-#### 找到被加密的内容（绿色的部分）![a0471bd1cbb30f0b231da4fd6babefbe](a0471bd1cbb30f0b231da4fd6babefbe.png)
+#### 找到被加密的内容（绿色的部分）![a0471bd1cbb30f0b231da4fd6babefbe](images/a0471bd1cbb30f0b231da4fd6babefbe.png)
 
 #### 加密函数AbstractHashMap.newMap
 
-![image-20250803184059351](image-20250803184059351.png)
+![image-20250803184059351](images/image-20250803184059351.png)
 
 
 
@@ -277,7 +277,7 @@ if __name__ == "__main__":
 
 ```
 
-![image-20250803184557829](image-20250803184557829.png)
+![image-20250803184557829](images/image-20250803184557829.png)
 
 
 
@@ -301,7 +301,7 @@ if __name__ == "__main__":
 
 反查得到是888888
 
-<img src="2985d4c0a9debf7a37aa5fcb4f6e84d6.jpg" alt="2985d4c0a9debf7a37aa5fcb4f6e84d6" style="zoom:25%;" />
+<img src="images/2985d4c0a9debf7a37aa5fcb4f6e84d6.jpg" alt="2985d4c0a9debf7a37aa5fcb4f6e84d6" style="zoom:25%;" />
 
 - **后面字符**：`r2c3s3ze01511hx0p5y`（疑似干扰加密）
 
@@ -400,7 +400,7 @@ recovered.rar有密码
 字典破解密码得到3690
 ```
 
-![image-20250803175824611](image-20250803175824611.png)
+![image-20250803175824611](images/image-20250803175824611.png)
 
 解压得到：729ec4d72da9599a308c64fe40156201.png
 
@@ -408,9 +408,9 @@ png图片已损坏，16进制工具打开。头是png，结尾是jepg
 
 去掉png头，补上jpg头，还原图片
 
-![image-20250802000516406](image-20250802000516406.png)
+![image-20250802000516406](images/image-20250802000516406.png)
 
-![image-20250803172704711](image-20250803172704711.png)
+![image-20250803172704711](images/image-20250803172704711.png)
 
 
 
@@ -432,7 +432,7 @@ png图片已损坏，16进制工具打开。头是png，结尾是jepg
 flag{waefsadjfan}
 ```
 
-![image-20250801194521950](image-20250801194521950.png)
+![image-20250801194521950](images/image-20250801194521950.png)
 
 
 
@@ -452,7 +452,7 @@ https://txtmoji.com/
 flag{iquiw131c12c3}
 ```
 
-![image-20250801194358953](image-20250801194358953.png)
+![image-20250801194358953](images/image-20250801194358953.png)
 
 
 
@@ -509,7 +509,7 @@ http://159.75.236.232:8087/index.php?url=php://filter/convert.base64-encode/reso
 最终在：   http://159.75.236.232:8087/index.php?url=file:///flag/flag.txt
 ```
 
-<img src="image-20250803174932032.png" alt="image-20250803174932032" style="zoom:33%;" />
+<img src="images/image-20250803174932032.png" alt="image-20250803174932032" style="zoom:33%;" />
 
 
 
@@ -523,7 +523,7 @@ http://159.75.236.232:8087/index.php?url=php://filter/convert.base64-encode/reso
 https://blog.csdn.net/yhfgs/article/details/117368761
 ```
 
-![image-20250801200754289](image-20250801200754289.png)
+![image-20250801200754289](images/image-20250801200754289.png)
 
 
 
@@ -559,7 +559,7 @@ print '密码错误';
 http://159.75.236.232:8085/?username[]=1&password[]=2
 ```
 
-![image-20250801115436839](image-20250801115436839.png)
+![image-20250801115436839](images/image-20250801115436839.png)
 
 
 
@@ -595,9 +595,9 @@ with open(r'C:\Users\Administrator\Desktop\bisai\output.png', 'wb') as f:
 
 得到图片,是猪圈密码
 
-![image-20250801173507178](image-20250801173507178.png)
+![image-20250801173507178](images/image-20250801173507178.png)
 
-![image](2065132-20210916173847794-1793003304.png)
+![image](images/2065132-20210916173847794-1793003304.png)
 
 得到答案
 
@@ -713,7 +713,7 @@ print("flag:", flag)
 flag{ub3rs3crbt}     
 ```
 
-![image-20250801200100540](image-20250801200100540.png)
+![image-20250801200100540](images/image-20250801200100540.png)
 
 
 
@@ -756,7 +756,7 @@ http://121.4.91.93:8081/是一个上传界面
 
 http://121.4.91.93:8081/flag.txt直接访问，easy
 
-![image-20250801205244775](image-20250801205244775.png)
+![image-20250801205244775](images/image-20250801205244775.png)
 
 
 
@@ -772,7 +772,7 @@ http://121.4.91.93:8081/flag.txt直接访问，easy
 https://ctf.bugku.com/tool/cvecode
 ```
 
-<img src="image-20250803184852751.png" alt="image-20250803184852751" style="zoom: 80%;" />
+<img src="images/image-20250803184852751.png" alt="image-20250803184852751" style="zoom: 80%;" />
 
 
 
